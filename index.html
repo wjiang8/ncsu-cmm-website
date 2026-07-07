@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computational Mechanics and Materials — NC State</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="unibar"><span>NC STATE UNIVERSITY</span><a href="https://ne.ncsu.edu">ne.ncsu.edu</a></div>
+<header>
+  <nav>
+    <a class="brand" href="index.html">CMM <span>/</span> Computational Mechanics &amp; Materials</a>
+    <div class="links">
+      <a href="research.html">Research</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="openings.html">Openings</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div>
+    <div class="eyebrow">Nuclear Engineering · NC State University × Idaho National Laboratory</div>
+    <h1>Predicting how nuclear fuel <em>cracks, creeps, and survives</em> — before it enters a reactor.</h1>
+    <p class="lede">We develop multiphysics and multiscale computational methods — phase-field fracture, TRISO fuel performance, and AI-accelerated simulation — implemented in the BISON and MOOSE codes that power advanced reactor design.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="research.html">Explore our research</a>
+      <a class="btn ghost" href="openings.html">Join the group</a>
+    </div>
+  </div>
+
+  <figure class="fig">
+    <svg viewBox="0 0 420 420" role="img" aria-label="Simulated cross-section of a TRISO fuel particle showing a crack propagating through the buffer layer">
+      <defs>
+        <radialGradient id="kernel" cx="50%" cy="45%" r="60%">
+          <stop offset="0%" stop-color="#ff9a3d"/><stop offset="55%" stop-color="#e05a00"/><stop offset="100%" stop-color="#8a2f00"/>
+        </radialGradient>
+        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#cc0000" stop-opacity=".16"/><stop offset="100%" stop-color="#cc0000" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="210" cy="210" r="205" fill="url(#glow)" class="pulse"/>
+      <circle cx="210" cy="210" r="172" fill="#2b3138"/>
+      <circle cx="210" cy="210" r="150" fill="#9aa7b1"/>
+      <circle cx="210" cy="210" r="130" fill="#3d444c"/>
+      <circle cx="210" cy="210" r="110" fill="#5c666f"/>
+      <circle cx="210" cy="210" r="72" fill="url(#kernel)"/>
+      <g fill="#454e57">
+        <circle cx="150" cy="150" r="3"/><circle cx="290" cy="170" r="2.5"/><circle cx="265" cy="290" r="3"/>
+        <circle cx="130" cy="250" r="2"/><circle cx="210" cy="105" r="2.6"/><circle cx="175" cy="305" r="2.2"/>
+        <circle cx="305" cy="235" r="2"/><circle cx="115" cy="195" r="2.4"/>
+      </g>
+      <path class="crack" d="M210,138 C230,150 224,168 244,178 C268,190 262,214 286,222 C300,227 306,240 316,252"
+            fill="none" stroke="#cc0000" stroke-width="3.4" stroke-linecap="round"/>
+      <path class="crack" d="M244,178 C252,164 268,160 282,150" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" style="animation-delay:2.4s"/>
+      <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#4a5560">
+        <line x1="210" y1="210" x2="368" y2="86" stroke="#c9c9c0" stroke-width="1"/>
+        <text x="330" y="78">UCO kernel</text>
+        <line x1="300" y1="260" x2="392" y2="330" stroke="#c9c9c0" stroke-width="1"/>
+        <text x="316" y="352">SiC layer</text>
+        <line x1="286" y1="222" x2="392" y2="200" stroke="#cc0000" stroke-width="1"/>
+        <text x="322" y="192" fill="#cc0000">Γ(φ) crack</text>
+      </g>
+    </svg>
+    <figcaption>fig 01 — phase-field fracture simulation, TRISO buffer layer · <b>BISON / MOOSE</b></figcaption>
+  </figure>
+</div>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <div class="sec-head"><h2>Research thrusts</h2><a href="research.html">all projects →</a></div>
+  <div class="grid">
+    <div class="card"><div class="tag">phase-field</div><h3>Fracture of Nuclear Fuels</h3><p>Variational phase-field methods for crack nucleation and growth in UO₂ and coated-particle fuels, coupled to heat transport and irradiation physics.</p></div>
+    <div class="card"><div class="tag">triso / fcm</div><h3>Coated Particle Fuel Performance</h3><p>Statistical failure analysis and thermomechanics of TRISO and fully ceramic microencapsulated fuel for microreactors and HTGRs.</p></div>
+    <div class="card"><div class="tag">ml-surrogates</div><h3>AI-Accelerated Simulation</h3><p>Machine-learning surrogates, active learning, and multifidelity methods for fission gas release and rapid fuel qualification.</p></div>
+    <div class="card"><div class="tag">methods</div><h3>Multiphysics Method Development</h3><p>Interface-enriched finite elements, cohesive zone models, and contact algorithms contributed to the MOOSE ecosystem.</p></div>
+  </div>
+</section>
+
+<!-- ============ NEWS + JOIN ============ -->
+<section>
+  <div class="split">
+    <div>
+      <div class="sec-head"><h2>Latest from the group</h2></div>
+      <ul class="news">
+        <li><time>2026-03</time><span>Group leads new DOE-NE award on uranium nitride fuel–cladding compatibility with NC State collaborators.</span></li>
+        <li><time>2026-03</time><span>NSUF collaboration with Purdue on irradiation-assisted stress corrosion cracking of AM 316L stainless steel.</span></li>
+        <li><time>2026-01</time><span>New work on AI-driven fission gas release modeling in support of the DOE Genesis Mission.</span></li>
+        <li><time>2025-11</time><span>Paper accepted in Journal of Nuclear Materials.</span></li>
+      </ul>
+    </div>
+    <div class="join">
+      <h2>Ph.D. positions open</h2>
+      <p>We're recruiting students in computational fracture mechanics, fuel performance, and scientific machine learning — with internship pathways at Idaho National Laboratory.</p>
+      <a class="btn primary" href="openings.html">How to apply</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="foot">
+    <div><b>Computational Mechanics &amp; Materials</b><br>Department of Nuclear Engineering &middot; NC State University &middot; Raleigh, NC</div>
+    <div><a href="https://scholar.google.com/citations?user=Jj2edygAAAAJ">Google Scholar</a> &middot; <a href="https://github.com/idaholab/moose">MOOSE</a> &middot; <a href="contact.html">Contact</a><br>&copy; 2026 CMM Group</div>
+  </div>
+</footer>
+</body>
+</html>
